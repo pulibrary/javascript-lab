@@ -12,13 +12,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0.3rem 2rem;
     background-color: black;
+}
+
+header a {
     color: white;
+    text-decoration: none;
 }
 
 nav a {
-    margin-right: 0.5rem;
+    margin-right: 1.2rem;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
 }
 
 nav a:last-child {
