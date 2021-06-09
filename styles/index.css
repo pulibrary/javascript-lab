@@ -6,6 +6,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sora', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 a {
@@ -22,9 +27,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 2rem;
+    padding: 1.25rem 2rem;
     background-color: black;
     color: white;
+}
+
+#site-name {
+    font: bold 28px 'Sora', sans-serif;
 }
 
 #site-name:hover,
@@ -41,15 +50,22 @@ nav a:last-child {
 }
 
 main {
-    
+    min-height: calc(100vh - 28px - 2.5rem - 16px - 3rem);
+    min-height: calc(100vh - 75px - 66px);
+}
+
+.title {
+    margin-bottom: 4rem;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     background-color: black;
     color: white;
     text-align: center;
     width: 100%;
-    height: 50px;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
 }
