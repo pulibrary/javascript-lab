@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sora:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', sans-serif;
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 64px;
 }
 
 a {
@@ -27,19 +27,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 2rem;
-    background-color: black;
-    color: white;
+    padding: 1.5rem 6rem;
+    background-color: white;
+    color: black;
 }
 
 #site-name {
-    font: bold 28px 'Sora', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-#site-name:hover,
+/* #site-name:hover,
 #site-name:focus {
     text-decoration: none;
-}
+} */
 
 nav a {
     margin-right: 1.2rem;
@@ -54,8 +55,9 @@ main {
     min-height: calc(100vh - 75px - 66px);
 }
 
-.title {
-    margin-bottom: 4rem;
+.title + p {
+    margin: 1.5rem 0 4rem 0;
+    font-size: 18px;
 }
 
 footer {
