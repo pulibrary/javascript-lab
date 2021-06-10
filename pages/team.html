@@ -6,10 +6,13 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Thanya Begum">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Team - JavaScript Lab</title>
+
         <link rel="stylesheet" href="../styles/normalize.css">
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="../styles/team.css">
+        <link rel="stylesheet" href="../styles/modal.css">
     </head>
     <body>
         <header>
@@ -20,44 +23,36 @@
                 <a href="team.html">Team</a>
             </nav>
         </header>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="" alt="">
+                <h1>Modal Not Found</h1>
+                <h3>Nothing to see here...</h3>
+                <p>Seems like you ended up in the wrong place. 
+                   Try clicking anywhere to go back.</p>
+            </div>
+        </div>
+
         <main>
             <h1 class="title">Meet The Team</h1>
             <p>Short description here.</p>
             <div id="photo-grid">
-                <div class="first-col">
-                    <div class="photo">Photo</div>
-                    <h2>Name</h2>
-                    <p>Role</p>
-                </div>
-                <div class="second-col">
-                    <div class="photo">Photo</div>
-                    <h2>Name</h2>
-                    <p>Role</p>
-                </div>
-                <div class="third-col">
-                    <div class="photo">Photo</div>
-                    <h2>Name</h2>
-                    <p>Role</p>
-                </div>
-                <div class="first-col">
-                    <div class="photo">Photo</div>
-                    <h2>Name</h2>
-                    <p>Role</p>
-                </div>
-                <div class="second-col">
-                    <div class="photo">Photo</div>
-                    <h2>Name</h2>
-                    <p>Role</p>
-                </div>
-                <div class="third-col">
-                    <div class="photo">Photo</div>
-                    <h2>Name</h2>
-                    <p>Role</p>
-                </div>
+                <!-- <div>
+                        <img class="photo">
+                        <h2 class="name"></h2>
+                        <p class="role"></p>
+                    </div> -->
             </div>
         </main>
+
         <footer>
             <p><a href="../index.html">JavaScript Lab</a> &copy; 2021</p>
         </footer>
+
+        <script src="../scripts/team-members.js"></script>
+        <script src="../scripts/team.js"></script>
+        <script src="../scripts/member-modal.js"></script>
     </body>
 </html>

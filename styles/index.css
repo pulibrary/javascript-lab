@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Oxygen', sans-serif;
+    width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -27,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 6rem;
+    padding: 3vh 5vw;
     background-color: white;
     color: black;
 }

@@ -10,24 +10,35 @@ main {
     row-gap: 5rem;
 }
 
-.photo {
-    width: 100%;
-    height: 350px;
-    background-color: black;
-}
-
-.photo + h2 {
-    margin: 1rem 0 0.5rem 0;
-}
-
-.first-col {
+#photo-grid > div:nth-child(3n - 2).team-member  {
     grid-column: 1 / 2;
 }
 
-.second-col {
+#photo-grid > div:nth-child(3n - 1).team-member {
     grid-column: 2 / 3;
 }
 
-.third-col {
+#photo-grid > div:nth-child(3n).team-member {
     grid-column: 3 / 4;
+}
+
+.photo {
+    width: 100%;
+    background-color: black;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.photo:hover + .name {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.name {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.name:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }

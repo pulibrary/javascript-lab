@@ -38,3 +38,5 @@ const teamMembers = [
         bio: "Holt is the no-nonsense boss of the 99, meant to be a foil to Andy Samberg's goofy Jake Peralta. It could be a boring dynamic, but creators Dan Goor and Mike Schur wrote Holt to defy expectations at every turn. He's a gay man who loves his corgi Cheddar, the music of John Philip Sousa, and puns delivered dryly with a straight face. Far from being just a series of discordant traits, Holt is a fully realized human whose life and career has defied the odds of prejudice and who delivers dialogue with a positively Shakespearean flair."
     }
 ]
+
+console.log(teamMembers);
