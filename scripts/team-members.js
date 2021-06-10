@@ -36,6 +36,12 @@ const teamMembers = [
         role: 'Captain',
         photoFileName: 'holt.jpeg',
         bio: "Holt is the no-nonsense boss of the 99, meant to be a foil to Andy Samberg's goofy Jake Peralta. It could be a boring dynamic, but creators Dan Goor and Mike Schur wrote Holt to defy expectations at every turn. He's a gay man who loves his corgi Cheddar, the music of John Philip Sousa, and puns delivered dryly with a straight face. Far from being just a series of discordant traits, Holt is a fully realized human whose life and career has defied the odds of prejudice and who delivers dialogue with a positively Shakespearean flair."
+    },
+    {
+        name: 'Lorelai Gilmore',
+        role: 'Mother, Hotel Owner',
+        photoFileName: 'lorelai.jpeg',
+        bio: "It's Lorelai Gilmore's unconventional life story that gives Gilmore Girls its hook. She's a daughter of a Daughter of the American Revolution who ran away from her ritzy upbringing once she got pregnant in high school to raise her daughter on her own in a cutesy Connecticut town with the almost ridiculous name of Stars Hollow. Watching Amy Sherman-Palladino's series, it's hard not to dream of being in the little club Lorelai and Rory have made for themselves, joining in on the reference-laden secret language they've crafted or stuffing their faces with coffee and junk food."
     }
 ]
 

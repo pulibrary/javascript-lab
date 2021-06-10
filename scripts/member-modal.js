@@ -1,11 +1,13 @@
 const modal = document.getElementById("modal");
+const modalLabel = document.getElementById("modal-label");
 const modalImg = document.querySelector(".modal-content img");
-const modalTitle = document.querySelector(".modal-content h1");
-const modalSubtitle = document.querySelector(".modal-content h3");
-const modalBody = document.querySelector(".modal-content p");
+const modalTitle = document.getElementById("modal-title");
+const modalSubtitle = document.getElementById("modal-subtitle");
+const modalBody = document.getElementById("modal-body");
 const closeBtn = document.getElementsByClassName("close")[0];
 
 function updateModal(member) {    
+    modalLabel.textContent = member.name;
     modalImg.src = `../images/${member.photoFileName}`;
     modalImg.alt = `${member.name}`;
     modalTitle.textContent = member.name;

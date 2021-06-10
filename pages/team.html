@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="../styles/team.css">
         <link rel="stylesheet" href="../styles/modal.css">
+
+        <script src="../scripts/team-members.js"></script>
     </head>
     <body>
         <header>
@@ -26,18 +28,21 @@
 
         <div id="modal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <div class="modal-header">
+                    <span id="modal-label">Modal Not Found</span>
+                    <span class="close">&times; Close</span>
+                </div>  
                 <img src="" alt="">
-                <h1>Modal Not Found</h1>
-                <h3>Nothing to see here...</h3>
-                <p>Seems like you ended up in the wrong place. 
+                <h2 id="modal-subtitle">Nothing to see here...</h2>
+                <h1 id="modal-title">Modal Not Found</h1>
+                <p id="modal-body">Seems like you ended up in the wrong place. 
                    Try clicking anywhere to go back.</p>
             </div>
         </div>
 
         <main>
             <h1 class="title">Meet The Team</h1>
-            <p>Short description here.</p>
+            <p>Our team consists of some of the most beloved characters.</p>
             <div id="photo-grid">
                 <!-- <div>
                         <img class="photo">
@@ -51,7 +56,6 @@
             <p><a href="../index.html">JavaScript Lab</a> &copy; 2021</p>
         </footer>
 
-        <script src="../scripts/team-members.js"></script>
         <script src="../scripts/team.js"></script>
         <script src="../scripts/member-modal.js"></script>
     </body>
