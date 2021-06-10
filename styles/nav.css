@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+    background-color: white;
+    color: black;
+}
+
+#site-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav a {
+    margin-right: 1.2rem;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
