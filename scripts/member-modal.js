@@ -6,6 +6,7 @@ const modalSubtitle = document.getElementById("modal-subtitle");
 const modalBody = document.getElementById("modal-body");
 const closeBtn = document.getElementsByClassName("close")[0];
 
+// Updates the modal's contents based on the member that was clicked */
 function updateModal(member) {    
     modalLabel.textContent = member.name;
     modalImg.src = `../images/${member.photoFileName}`;
@@ -15,20 +16,23 @@ function updateModal(member) {
     modalBody.textContent = member.bio;
 }
 
-photoGrid.onclick = function(event) {
+// When the user clicks on a team member's name/photo, open and update the modal 
+photoGrid.addEventListener('click', event => {
     if (event.target.className === "photo" || event.target.className === "name") {
-        let member = teamMembers.find(element => element.name === event.target.title);
+        const member = teamMembers.find(element => element.name === event.target.title);
         updateModal(member);
         modal.style.display = "block";
     }
-}
+});
 
-closeBtn.onclick = function() {
+// When the user clicks on Close (x), close the modal
+closeBtn.addEventListener('click', () => {
     modal.style.display = "none";
-}
+});
 
-window.onclick = function(event) {
+// When the user clicks anywhere outside of the modal, close the modal
+window.addEventListener('click', event => {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+});

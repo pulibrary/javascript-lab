@@ -1,4 +1,5 @@
-/* Bios source: https://www.thrillist.com/entertainment/nation/best-tv-characters-of-the-21st-century-ranked */
+// This file contains the data that populates the team page.
+// Bios and photos are taken from: https://www.thrillist.com/entertainment/nation/best-tv-characters-of-the-21st-century-ranked
 
 const teamMembers = [
     {

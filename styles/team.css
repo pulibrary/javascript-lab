@@ -1,3 +1,5 @@
+/* Team Photo Grid */
+
 main {
     padding: 6vh 14vw 10vh 14vw;
 }
@@ -22,6 +24,8 @@ main {
     grid-column: 3 / 4;
 }
 
+/* Team Member Photo */
+
 .photo {
     width: 100%;
     background-color: black;
@@ -33,6 +37,8 @@ main {
     cursor: pointer;
     text-decoration: underline;
 }
+
+/* Team Member Info (i.e. Name & Role) */
 
 .name {
     font-size: 1.5rem;

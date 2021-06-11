@@ -1,5 +1,6 @@
 const photoGrid = document.querySelector('#photo-grid');
 
+// Creates and returns the div containing a member's photo, name, and role
 function createDiv(member) {
     const memberDiv = document.createElement("div");
     memberDiv.className = "team-member";
@@ -27,9 +28,10 @@ function createDiv(member) {
     return memberDiv;
 }
 
+// Iterates over array of all team members, creating divs for each of them and adding them to the photo grid
 for (let i = 0; i < teamMembers.length; i++) {
-    let member = teamMembers[i];
-    let memberDiv = createDiv(member);
+    const member = teamMembers[i];
+    const memberDiv = createDiv(member);
     photoGrid.appendChild(memberDiv);
 }
   

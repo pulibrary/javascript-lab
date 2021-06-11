@@ -1,7 +1,7 @@
 body {
     color: white;
     background-color: black;
-    transition: background-color 4s ease;
+    transition: background-color 3s ease; /* Time for color to change */
 }
 
 header {
