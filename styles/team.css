@@ -1,55 +1,8 @@
-/* Team Photo Grid */
-
-main {
-    padding: 6vh 14vw 10vh 14vw;
-}
-
-#photo-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    column-gap: 2rem;
-    row-gap: 5rem;
-}
-
-#photo-grid > div:nth-child(3n - 2).team-member  {
-    grid-column: 1 / 2;
-}
-
-#photo-grid > div:nth-child(3n - 1).team-member {
-    grid-column: 2 / 3;
-}
-
-#photo-grid > div:nth-child(3n).team-member {
-    grid-column: 3 / 4;
-}
-
-/* Team Member Photo */
-
-.photo {
-    width: 100%;
-    background-color: black;
-    object-fit: cover;
+.card:hover {
     cursor: pointer;
 }
 
-.photo:hover + .name {
+.card:hover .name {
     cursor: pointer;
     text-decoration: underline;
-}
-
-/* Team Member Info (i.e. Name & Role) */
-
-.name {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem 0;
-}
-
-.name:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.role {
-    font-size: 1.1rem;
 }
