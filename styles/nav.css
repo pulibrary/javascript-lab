@@ -1,27 +1,12 @@
 /* Navigation Container */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3vh 5vw;
-    background-color: white;
+nav {
     color: black;
 }
 
 /* Site Logo/Name */
 
-#site-name {
+.navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-}
-
-/* Site Links */
-
-nav a {
-    margin-right: 1.2rem;
-}
-
-nav a:last-child {
-    margin-right: 0;
 }
