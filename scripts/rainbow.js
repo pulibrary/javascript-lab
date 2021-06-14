@@ -8,4 +8,4 @@ setInterval(() => {
     if (!colors[currentIndex]) {
         currentIndex = 0;
     } else currentIndex++;
-}, 2000);
+}, 3000);
