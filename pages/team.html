@@ -25,6 +25,7 @@
         <script src="../scripts/team-members.js"></script>
     </head>
     <body>
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light px-1 px-md-4 px-xl-5 pt-3 mb-auto">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="../index.html">JavaScript Lab</a>
@@ -41,42 +42,57 @@
             </div>
         </nav>
 
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span id="modal-label">Modal Not Found</span>
-                    <span class="close">&times; Close</span>
-                </div>  
-                <img src="" alt="">
-                <h2 id="modal-subtitle">Nothing to see here...</h2>
-                <h1 id="modal-title">Modal Not Found</h1>
-                <p id="modal-body">Seems like you ended up in the wrong place. 
-                   Try clicking anywhere to go back.</p>
+        <!-- Modal -->
+        <div id="modal" class="modal fade" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="margin-top: 8rem">
+                <div class="modal-content px-2 pb-2">
+                    <div class="modal-header border-0 pt-3 px-4">
+                        <h5 id="modal-label" class="modal-title fw-bold">Modal Not Found</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body container-fluid pt-0 px-4">
+                        <div class="row">
+                            <div class="col-6 pe-4">
+                                <img id="modal-img" class="img-fluid" src="../images/holt.jpeg" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h2 id="modal-subtitle" class="fw-bold text-muted display-6 mb-0">Nothing to see here...</h2>
+                                <h1 id="modal-title" class="fw-bold display-5 mb-3">Modal Not Found</h1>
+                                <p id="modal-body">Seems like you ended up in the wrong place. 
+                                   Try clicking anywhere to go back.</p>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Grid of Cards-->
         <main class="container mx-auto my-5">
-            <h1 class="title fw-bold">Meet The Team</h1>
+            <h1 class="title fw-bold display-4">Meet The Team</h1>
             <p class="mb-5">Our team consists of some of the most beloved characters.</p>
-            <div id="photo-grid" class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- <div class="col">
-                        <div class="card">
-                            <img src="../images/holt.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h2 class="card-title fw-bold h4">Holt</h2>
-                                <h3 class="card-subtitle mb-2 text-muted h5">Captain</h3>
-                            </div>
+            <div id="grid" class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card -->
+                <!-- <div class="col" data-bs-toggle="modal" data-bs-target="#modal" data-bs-name="Holt">
+                    <div class="card">
+                        <img class="photo card-img-top" src="../images/holt.jpeg" alt="...">
+                        <div class="card-body">
+                            <h2 class="name card-title fw-bold h4">Holt</h2>
+                            <h3 class="role card-subtitle mb-2 text-muted h5">Captain</h3>
                         </div>
-                    </div> -->
+                    </div>
+                </div> -->
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="footer mt-auto py-3 text-center">
             <a class="link-dark text-decoration-none" href="../index.html">JavaScript Lab</a> &copy; 2021
         </footer>
 
+        <!-- More Scripts -->
         <script src="../scripts/team.js"></script>
-        <!-- <script src="../scripts/member-modal.js"></script> -->
+        <script src="../scripts/member-modal.js"></script>
 
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
