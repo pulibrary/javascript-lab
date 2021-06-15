@@ -1,11 +1,11 @@
-let modal = document.getElementById('modal'); // The modal
+const modal = document.getElementById('modal'); // The modal
 
-// When the user clicks on a team member's card, open and update the modal 
+// When the user clicks on a team member's card, opens and updates the modal 
 modal.addEventListener('show.bs.modal', event => {
     const memberDiv = event.relatedTarget; // Team member that was clicked
-    const name = memberDiv.getAttribute('data-bs-name'); // Extract name of team member from data-bs-name attribute
-    const member = teamMembers.find(element => element.name === name); // Find member object with that name
-    updateModal(member); // Update the modal's content
+    const name = memberDiv.getAttribute('data-bs-name'); // Extracts name of team member from data-bs-name attribute
+    const member = teamMembers.find(element => element.name === name); // Finds member object with that name
+    updateModal(member); // Updates the modal's content
 })
 
 // Updates the modal's contents based on the member that was clicked
