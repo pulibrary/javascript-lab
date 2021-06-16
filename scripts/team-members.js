@@ -1,7 +1,8 @@
 // This file contains the data that populates the team page.
 // Bios and photos are taken from: https://www.thrillist.com/entertainment/nation/best-tv-characters-of-the-21st-century-ranked
+import Member from './member.js';
 
-const teamMembers = [
+const data = [
     {
         name: 'Dewey Wilkerson',
         role: 'Little Brother',
@@ -46,4 +47,11 @@ const teamMembers = [
     }
 ]
 
+let teamMembers = {}; // Object where each property is the name of the member and its value is the member object
+data.forEach((teamMember) => {
+    const member = new Member(teamMember);
+    teamMembers[member.name] = member;
+});
 console.log(teamMembers);
+
+export default teamMembers;
